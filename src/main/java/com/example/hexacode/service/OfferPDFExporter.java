@@ -1,4 +1,4 @@
-package tn.esprit.hexacode.service;
+package com.example.hexacode.service;
 
 import java.awt.Color;
 import java.io.IOException;
@@ -17,7 +17,7 @@ import com.lowagie.text.pdf.PdfPCell;
 import com.lowagie.text.pdf.PdfPTable;
 import com.lowagie.text.pdf.PdfWriter;
 
-import tn.esprit.hexacode.Entity.Offers;
+import  com.example.hexacode.Entity.Offers;
 public class OfferPDFExporter {
 
 	private List<Offers> listOffers ;

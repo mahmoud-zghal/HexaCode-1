@@ -1,9 +1,9 @@
-package tn.esprit.hexacode.Service;
+package com.example.hexacode.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import tn.esprit.hexacode.Entity.History;
-import tn.esprit.hexacode.Repository.HistoryRepository;
+import  com.example.hexacode.Entity.History;
+import  com.example.hexacode.repository.HistoryRepository;
 
 
 

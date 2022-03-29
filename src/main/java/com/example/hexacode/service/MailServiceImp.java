@@ -1,8 +1,8 @@
-package tn.esprit.hexacode.service;
+package com.example.hexacode.service;
 
 
 
-import tn.esprit.hexacode.Entity.Reservation;
+import  com.example.hexacode.Entity.Reservation;
 
 public class MailServiceImp implements ImailService {
 

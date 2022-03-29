@@ -1,4 +1,4 @@
-package tn.esprit.hexacode.service;
+package com.example.hexacode.service;
 
 import java.util.List;
 
@@ -6,8 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
-import tn.esprit.hexacode.Entity.Offers;
-import tn.esprit.hexacode.repository.OfferRepository;
+import  com.example.hexacode.Entity.Offers;
+import  com.example.hexacode.repository.OfferRepository;
 @Service
 public class OfferServiceImp implements IOfferService{
 	

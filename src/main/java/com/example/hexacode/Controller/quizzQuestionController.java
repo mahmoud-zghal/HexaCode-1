@@ -1,4 +1,4 @@
-package tn.esprit.hexacode.Controller;
+package com.example.hexacode.Controller;
 
 import io.swagger.models.Model;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -7,11 +7,11 @@ import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.MimeMessageHelper;
 import org.springframework.mail.javamail.MimeMessagePreparator;
 import org.springframework.web.bind.annotation.*;
-import tn.esprit.hexacode.Entity.User;
-import tn.esprit.hexacode.Entity.Quiz;
-import tn.esprit.hexacode.Repository.UserRepository;
-import tn.esprit.hexacode.Repository.quizzQuestionRepository;
-import tn.esprit.hexacode.Service.quizzQuestionService;
+import  com.example.hexacode.Entity.User;
+import  com.example.hexacode.Entity.Quiz;
+import  com.example.hexacode.repository.UserRepository;
+import  com.example.hexacode.repository.quizzQuestionRepository;
+import  com.example.hexacode.service.quizzQuestionService;
 import java.util.List;
 
 

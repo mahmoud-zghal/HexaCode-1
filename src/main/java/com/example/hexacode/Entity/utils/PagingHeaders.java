@@ -1,4 +1,4 @@
-package tn.esprit.hexacode.Entity.utils;
+package com.example.hexacode.Entity.utils;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

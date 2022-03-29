@@ -1,10 +1,12 @@
-package tn.esprit.hexacode.Entity;
+package com.example.hexacode.Entity;
 import java.io.Serializable;
 import java.time.LocalDateTime;
 
 import java.util.Set;
 
 import javax.persistence.*;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -26,10 +28,10 @@ private String title;
 private String subtitle;
 private LocalDateTime date;
 private boolean status;
-
+@JsonIgnore
 @ManyToOne
 private User user;
-
+@JsonIgnore
 @OneToMany(mappedBy = "subject")
 private Set<Response> response;
 

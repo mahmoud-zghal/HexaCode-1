@@ -1,4 +1,4 @@
-package tn.esprit.hexacode.service;
+package com.example.hexacode.service;
 
 import java.util.List;
 
@@ -6,8 +6,8 @@ import org.springframework.data.domain.Sort;
 import org.springframework.data.jpa.domain.Specification;
 import org.springframework.http.HttpHeaders;
 
-import tn.esprit.hexacode.Entity.Response;
-import tn.esprit.hexacode.Entity.utils.PagingResponse;;
+import  com.example.hexacode.Entity.Response;
+import  com.example.hexacode.Entity.utils.PagingResponse;;
 
 public interface IResponseService {
 	List<Response> retrieveAllResponse();

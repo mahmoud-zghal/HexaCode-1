@@ -6,6 +6,11 @@ import java.util.Set;
 
 import javax.persistence.*;
 
+import org.springframework.format.annotation.DateTimeFormat;
+
+import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -23,27 +28,52 @@ public class Event  implements Serializable {
 	@GeneratedValue (strategy = GenerationType.IDENTITY)
 	private Long id;
 	private String title;
-	private int note;
+	private double note;
 	@Temporal(TemporalType.DATE)
-	private Date date;
+	@JsonFormat(pattern = "yyyy-MM-dd",timezone="Europe/Zagreb")
+	private Date start_date;
+	
+	@Temporal(TemporalType.DATE)
+	@JsonFormat(pattern = "yyyy-MM-dd",timezone="Europe/Zagreb")
+	private Date end_date;
+
 	private String creator;
 	private String Departement;
 	private String location;
-	private int points ;
-	private  Category category; 
-        private int nbPartipants ;
-	@ManyToMany(mappedBy="events", cascade = CascadeType.ALL)
-	private Set<User> users;
-
-         
-	@OneToMany(mappedBy = "event")
-	private Set<EventComment> eventComment;
+	private int particpants_number;
 	
+	@Enumerated(EnumType.STRING)
+	private Status status;
+	private String image;
+	
+	
+	@OneToMany(mappedBy="event")
+	@JsonIgnore
+	private Set<EventComment> eventcomments;
+
+	
+	@JsonIgnore
+	@ManyToMany(cascade = CascadeType.ALL)
+	private Set<User> users; 
+	
+	@JsonIgnore
+	@OneToMany
+	private Set<Bookmarks>bookmarks;
+	
+	@JsonIgnore
+	@OneToMany(mappedBy="events")
+	private Set<Participant>Participants;
+
 	@ManyToOne 
 	private Collaborator collaborator ;
 	
 
 	@OneToMany(mappedBy = "event")
 	private Set<Reservation> reservation ;
+	
+	
+	
+	
+	
 
 }

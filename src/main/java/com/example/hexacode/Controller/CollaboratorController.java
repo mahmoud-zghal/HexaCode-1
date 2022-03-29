@@ -1,4 +1,4 @@
-package tn.esprit.hexacode.controller;
+package com.example.hexacode.Controller;
 
 import java.util.List;
 
@@ -12,10 +12,10 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import tn.esprit.hexacode.Entity.Collaborator;
-import tn.esprit.hexacode.repository.CollaboratorRepository;
-import tn.esprit.hexacode.service.ICollaboratorService;
-import tn.esprit.hexacode.service.IRatingService;
+import  com.example.hexacode.Entity.Collaborator;
+import  com.example.hexacode.repository.CollaboratorRepository;
+import  com.example.hexacode.service.ICollaboratorService;
+import  com.example.hexacode.service.IRatingService;
 
 @RequestMapping("/collaborator")
 @org.springframework.web.bind.annotation.RestController

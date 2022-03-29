@@ -1,4 +1,4 @@
-package tn.esprit.hexacode.controller;
+package com.example.hexacode.Controller;
 
 import java.io.IOException;
 import java.text.DateFormat;
@@ -20,9 +20,9 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.lowagie.text.DocumentException;
 
-import tn.esprit.hexacode.Entity.Offers;
-import tn.esprit.hexacode.service.IOfferService;
-import tn.esprit.hexacode.service.OfferPDFExporter;
+import  com.example.hexacode.Entity.Offers;
+import  com.example.hexacode.service.IOfferService;
+import  com.example.hexacode.service.OfferPDFExporter;
 
 @RequestMapping("/offer")
 @org.springframework.web.bind.annotation.RestController

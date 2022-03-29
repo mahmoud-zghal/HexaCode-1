@@ -1,30 +1,79 @@
-package tn.esprit.hexacode.Service;
+package com.example.hexacode.service;
 
-
-import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
-import tn.esprit.hexacode.Entity.Event;
-
+import java.util.Date;
 import java.util.List;
-public interface EventService {
+import java.util.Set;
 
-   // public Event create(Event eventData);
-    public Event save( Event event);
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
-    public Event updateEvent(Event event, Long eventid );
+import  com.example.hexacode.Entity.Event;
+import  com.example.hexacode.Entity.InvitationStatus;
+import  com.example.hexacode.Entity.Participant;
+import  com.example.hexacode.repository.IEventRepository;
+import  com.example.hexacode.repository.IParticipantRepository;
 
-   // public void delete(Long eventid);
+@Service
+public class EventService implements IEventService {
+	
+	@Autowired
+	IEventRepository EventRepo ;
+	
+	@Autowired
+	IParticipantRepository particpantRepo;
+	
+	
+	public void addEvent(Event e){
+		EventRepo.save(e);
+	}
+	
+	public void UpdateEvent(Event e){
+		EventRepo.save(e);
+	}
+	
+	public void deleteEvent(Long id){
+		EventRepo.deleteById(id);
+	}
+	
+    public List<Event> retrieveAllEvents() {
+		
+		List<Event> events =  EventRepo.findAll();
+		return events;
+	}
+    
+    
+    public Event OverralEventRating(Long idEvent){
+    	Event event=EventRepo.findById(idEvent).orElse(null);
+    	Set<Participant> x = event.getParticipants();
+    	
+    	double moy=0;
+    	double total=0;
+    	for (Participant i : x){
+    		int r = i.getRating();
+    		total=total+r;
+    		moy=total/x.size();
+    		 
+    	}
+    	event.setNote(moy);
+    	EventRepo.save(event);
+    	return event;
+    	
+    }
+    
+    
+    
+    
+    
+    
+    
 
 
-    void delete(Long eventid);
 
-    public Event getEvent(Long eventid);
 
-    public List getAllEvents();
+	
+	
+	
+	
+	
 
-    public void cancelRegistration(Long eventid,Long userid);
-
-    public List getRegisteredEvents(Long userid);
-
-    public boolean isAlreadyRegistered(Long userid,Long eventid);
 }

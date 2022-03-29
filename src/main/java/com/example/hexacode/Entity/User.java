@@ -19,6 +19,7 @@ import javax.persistence.OneToMany;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -110,5 +111,18 @@ public class User  implements Serializable{
 	
 	@OneToMany(mappedBy = "user")
 	private Set<Rating> rating;
+
+	@JsonIgnore
+	@OneToMany
+	private Set<Bookmarks>bookmarks;
+	
+	
+	@JsonIgnore
+	@OneToMany(mappedBy="users")
+	private Set<Participant>Participants;
+	
+	@JsonIgnore
+	@OneToMany
+	private Set<Follows>Follows;
 	
 }

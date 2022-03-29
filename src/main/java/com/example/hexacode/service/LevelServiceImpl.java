@@ -1,11 +1,11 @@
-package tn.esprit.hexacode.Service;
+package com.example.hexacode.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import tn.esprit.hexacode.Entity.Level;
-import tn.esprit.hexacode.Entity.Theme;
-import tn.esprit.hexacode.Repository.LevelRepository;
-import tn.esprit.hexacode.Repository.ThemeRepository;
+import  com.example.hexacode.Entity.Level;
+import  com.example.hexacode.Entity.Theme;
+import  com.example.hexacode.repository.LevelRepository;
+import  com.example.hexacode.repository.ThemeRepository;
 
 import javax.transaction.Transactional;
 

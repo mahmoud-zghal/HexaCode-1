@@ -1,10 +1,10 @@
-package tn.esprit.hexacode.Repository;
+package com.example.hexacode.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
-import tn.esprit.hexacode.Entity.Question;
+import  com.example.hexacode.Entity.Question;
 
 
 @Repository

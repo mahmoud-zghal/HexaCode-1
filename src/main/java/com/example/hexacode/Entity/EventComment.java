@@ -5,6 +5,8 @@ import java.util.Date;
 
 import javax.persistence.*;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -26,8 +28,8 @@ public class EventComment {
 	private String autor;
 	@Temporal(TemporalType.DATE)
 	private Date date;
-
-	@ManyToOne
+	@JsonIgnore
+	@ManyToOne(cascade=CascadeType.ALL)
 	private Event event;
 	
 

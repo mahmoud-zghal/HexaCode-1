@@ -1,14 +1,14 @@
-package tn.esprit.hexacode.Service;
+package com.example.hexacode.service;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.stereotype.Service;
-import tn.esprit.hexacode.Entity.Level;
-import tn.esprit.hexacode.Entity.User;
-import tn.esprit.hexacode.Entity.Quiz;
-import tn.esprit.hexacode.Repository.LevelRepository;
-import tn.esprit.hexacode.Repository.quizzQuestionRepository;
+import  com.example.hexacode.Entity.Level;
+import  com.example.hexacode.Entity.User;
+import  com.example.hexacode.Entity.Quiz;
+import  com.example.hexacode.repository.LevelRepository;
+import  com.example.hexacode.repository.quizzQuestionRepository;
 
 import javax.transaction.Transactional;
 import java.util.List;

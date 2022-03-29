@@ -1,4 +1,4 @@
-package tn.esprit.hexacode.service;
+package com.example.hexacode.service;
 
 import java.time.LocalDateTime;
 import java.util.List;
@@ -6,8 +6,8 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import tn.esprit.hexacode.Entity.Subject;
-import tn.esprit.hexacode.repo.SubjectRepository;
+import  com.example.hexacode.Entity.Subject;
+import  com.example.hexacode.repository.SubjectRepository;
 
 
 

@@ -1,4 +1,4 @@
-package tn.esprit.hexacode.configuration;
+package com.example.hexacode.configuration;
 import net.kaczmarzyk.spring.data.jpa.web.SpecificationArgumentResolver;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.transaction.annotation.EnableTransactionManagement;

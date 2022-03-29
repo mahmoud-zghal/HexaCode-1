@@ -1,7 +1,7 @@
-package tn.esprit.hexacode.Service;
+package com.example.hexacode.service;
 
 import org.springframework.stereotype.Service;
-import tn.esprit.hexacode.Entity.Theme;
+import  com.example.hexacode.Entity.Theme;
 
 @Service
 public interface ThemeService {

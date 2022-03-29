@@ -1,11 +1,11 @@
-package tn.esprit.hexacode.service;
+package  com.example.hexacode.service;
 
 import java.util.List;
 
-import tn.esprit.hexacode.Entity.Collaborator;
+import  com.example.hexacode.Entity.Collaborator;
 
 public interface ICollaboratorService {
-	List<tn.esprit.hexacode.Entity.Collaborator> RetrieveAllCollaborator();
+	List< com.example.hexacode.Entity.Collaborator> RetrieveAllCollaborator();
 	Collaborator addCollaborator (Collaborator c); 
 	Collaborator retrieveCollaborator (Long id );
 	Collaborator modifyCollaborator (Collaborator c) ;

@@ -1,7 +1,7 @@
-package tn.esprit.hexacode.Service;
+package com.example.hexacode.service;
 
 import org.springframework.stereotype.Service;
-import tn.esprit.hexacode.Entity.Level;
+import  com.example.hexacode.Entity.Level;
 
 @Service
 public interface LevelService {

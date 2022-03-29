@@ -1,33 +1,38 @@
-package tn.esprit.hexacode.Entity;
-import java.io.Serializable;
+package com.example.hexacode.Entity;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+
 @Entity
 @Getter
 @Setter
-@AllArgsConstructor
 @NoArgsConstructor
-public class Quizz implements Serializable{
+@AllArgsConstructor
+public class Follows {
 	
 private static final long serialVersionUID = 1L;
-
-@Id
-@GeneratedValue(strategy=GenerationType.IDENTITY)
-private Long id;
-private String theme;
-private Long pointsToGain;
-
-@ManyToOne
-private User user ;
+    
+	
+	@Id
+	@GeneratedValue (strategy = GenerationType.IDENTITY)
+	private Long id;
+	
+	@ManyToOne
+    @JoinColumn(name = "intrest_id")
+	private Interest intrestFollowed;
+	
+	
+    @ManyToOne
+    @JoinColumn(name = "user_id")
+    private User userFollowing;
 
 }
-

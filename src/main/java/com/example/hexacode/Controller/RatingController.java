@@ -1,4 +1,4 @@
-package tn.esprit.hexacode.controller;
+package com.example.hexacode.Controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -10,12 +10,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import tn.esprit.hexacode.Entity.Collaborator;
-import tn.esprit.hexacode.Entity.Rating;
-import tn.esprit.hexacode.Entity.User;
-import tn.esprit.hexacode.repository.CollaboratorRepository;
-import tn.esprit.hexacode.repository.UserRepository;
-import tn.esprit.hexacode.service.IRatingService;
+import  com.example.hexacode.Entity.Collaborator;
+import  com.example.hexacode.Entity.Rating;
+import  com.example.hexacode.Entity.User;
+import  com.example.hexacode.repository.CollaboratorRepository;
+import  com.example.hexacode.repository.UserRepository;
+import  com.example.hexacode.service.IRatingService;
 
 
 

@@ -1,9 +1,9 @@
-package tn.esprit.hexacode.Controller;
+package com.example.hexacode.Controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import tn.esprit.hexacode.Entity.Question;
-import tn.esprit.hexacode.Service.QuestionService;
+import  com.example.hexacode.Entity.Question;
+import  com.example.hexacode.service.QuestionService;
 
 @RestController
 public class QuestionController {

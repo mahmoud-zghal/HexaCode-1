@@ -1,9 +1,9 @@
-package tn.esprit.hexacode.service;
+package com.example.hexacode.service;
 
 import java.util.List;
 
 
-import tn.esprit.hexacode.Entity.Reservation;
+import  com.example.hexacode.Entity.Reservation;
 
 public interface IReservationService {
 	List<Reservation> RetrieveAllReservation ();

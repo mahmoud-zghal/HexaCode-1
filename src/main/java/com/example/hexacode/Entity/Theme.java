@@ -1,4 +1,4 @@
-package tn.esprit.hexacode.Entity;
+package com.example.hexacode.Entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.*;

@@ -1,13 +1,13 @@
-package tn.esprit.hexacode.service;
+package com.example.hexacode.service;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import tn.esprit.hexacode.Entity.Collaborator;
+import  com.example.hexacode.Entity.Collaborator;
 
-import tn.esprit.hexacode.repository.CollaboratorRepository;
+import  com.example.hexacode.repository.CollaboratorRepository;
 
 @Service
 public class CollaboratorServiceImp implements ICollaboratorService  {

@@ -1,4 +1,4 @@
-package tn.esprit.hexacode;
+package com.example.hexacode;
 
 public class MyConstants {
 
@@ -15,11 +15,11 @@ public class MyConstants {
 //mtaa oumayma
 
 // Replace with your email here:  
-    public static final String MY_EMAIL = "oumayma.sghari@esprit.tn";
+    public static final String MY_EMAIL1 = "oumayma.sghari@esprit.tn";
 
     // Replace password!!
-    public static final String MY_PASSWORD = "cdiddaixisgclesb";
+    public static final String MY_PASSWORD1 = "cdiddaixisgclesb";
 
     // And receiver!
-    public static final String FRIEND_EMAIL = "oumaymasghari@yahoo.com";
+    public static final String FRIEND_EMAIL1 = "oumaymasghari@yahoo.com";
 }

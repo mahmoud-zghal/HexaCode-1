@@ -1,8 +1,8 @@
-package tn.esprit.hexacode.Service;
+package com.example.hexacode.service;
 
 import org.springframework.stereotype.Service;
-import tn.esprit.hexacode.Entity.User;
-import tn.esprit.hexacode.Entity.Quiz;
+import  com.example.hexacode.Entity.User;
+import  com.example.hexacode.Entity.Quiz;
 
 import java.util.List;
 

@@ -19,7 +19,7 @@ import javax.mail.internet.MimeMessage;
 import javax.servlet.http.HttpServletRequest;
 import java.io.UnsupportedEncodingException;
 
-@Controller @Slf4j
+@RestController @Slf4j
 public class ForgotPasswordController {
     @Autowired
     private JavaMailSender mailSender;

@@ -1,12 +1,12 @@
-package tn.esprit.hexacode.service;
+package com.example.hexacode.service;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import tn.esprit.hexacode.Entity.Reservation;
-import tn.esprit.hexacode.repository.ReservationRepository;
+import  com.example.hexacode.Entity.Reservation;
+import  com.example.hexacode.repository.ReservationRepository;
 @Service
 public class ReservationServiceImp implements IReservationService{
 	@Autowired

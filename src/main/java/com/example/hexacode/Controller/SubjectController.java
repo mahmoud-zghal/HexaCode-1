@@ -1,4 +1,4 @@
-package tn.esprit.hexacode.controller;
+package com.example.hexacode.Controller;
 
 import java.time.LocalDateTime;
 import java.util.List;
@@ -14,9 +14,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 
-import tn.esprit.hexacode.Entity.Subject;
+import  com.example.hexacode.Entity.Subject;
 
-import tn.esprit.hexacode.service.ISubjectService;
+import  com.example.hexacode.service.ISubjectService;
 
 @RestController
 @RequestMapping(value = "subject")

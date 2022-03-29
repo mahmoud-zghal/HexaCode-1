@@ -1,9 +1,14 @@
 package com.example.hexacode;
 
 import com.example.hexacode.Entity.User;
+
+import java.util.Arrays;
+import java.util.List;
+
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import springfox.documentation.builders.ApiInfoBuilder;
@@ -16,6 +21,8 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 @EnableSwagger2
 @SpringBootApplication
+@ComponentScan
+
 public class HexacodeApplication {
 
     public static void main(String[] args) {
@@ -27,22 +34,9 @@ public class HexacodeApplication {
     }
 
 
-    @Bean
-    public Docket api() {
-        return new Docket(DocumentationType.SWAGGER_2)
-                .select()
-                .apis(RequestHandlerSelectors.basePackage("tn.esprit.hexacode"))
-                .paths(PathSelectors.any())
-                .build()
-                .apiInfo(apiInfo());
-    }
-
-    private ApiInfo apiInfo() {
-        return new ApiInfoBuilder().title("Library Spring Boot REST API Documentation")
-                .description("REST APIs For Managing Books loans in a Library")
-                .version("1.0")
-                .build();
-    }
+    
+    
+    public static List<String> forbiddenwords = Arrays.asList("bhim","msatek", "jghal");
 
 
 

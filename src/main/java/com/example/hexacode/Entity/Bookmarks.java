@@ -1,16 +1,16 @@
-package tn.esprit.hexacode.Entity;
+package com.example.hexacode.Entity;
 
-
-
-import java.io.Serializable;
+import java.util.Date;
 import java.util.Set;
 
-import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.OneToMany;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -21,22 +21,22 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class Badge  implements Serializable{
-	
-	private static final long serialVersionUID = 1L;
+public class Bookmarks {
+private static final long serialVersionUID = 1L;
     
 	
 	@Id
 	@GeneratedValue (strategy = GenerationType.IDENTITY)
 	private Long id;
-	private int points;
-	private String image;
-	private String title;
 	
-	@OneToMany(cascade = CascadeType.ALL, mappedBy="badge")
-	private Set<User> users;
+	@ManyToOne
+    @JoinColumn(name = "event_id")
+	private Event eventbookmarked;
 	
 	
-	
-
+    @ManyToOne
+    @JoinColumn(name = "user_id")
+    private User userbookmarked;
+    
+   
 }

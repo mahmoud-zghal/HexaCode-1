@@ -1,4 +1,4 @@
-package tn.esprit.hexacode.controller;
+package com.example.hexacode.Controller;
 
 import java.time.LocalDateTime;
 import java.util.List;
@@ -13,11 +13,11 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import tn.esprit.hexacode.HexaCodeApplication;
-import tn.esprit.hexacode.Entity.Response;
-import tn.esprit.hexacode.Entity.utils.PagingHeaders;
-import tn.esprit.hexacode.Entity.utils.PagingResponse;
-import tn.esprit.hexacode.service.IResponseService;
+import  com.example.hexacode.HexacodeApplication;
+import  com.example.hexacode.Entity.Response;
+import  com.example.hexacode.Entity.utils.PagingHeaders;
+import  com.example.hexacode.Entity.utils.PagingResponse;
+import  com.example.hexacode.service.IResponseService;
 
 
 import net.kaczmarzyk.spring.data.jpa.domain.Like;
@@ -52,7 +52,7 @@ public class ResponseController {
 	public Response addResponse(@RequestBody Response r) { 
 		String[] words = r.getContent().split(" ");
 		for(int i = 0;i< words.length;i++){
-		if(HexaCodeApplication.forbiddenwords.contains(words[i].trim())){
+		if(HexacodeApplication.forbiddenwords.contains(words[i].trim())){
 			r.setContent(r.getContent().replace(words[i], "*****"));
 		}
 		}

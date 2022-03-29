@@ -1,4 +1,4 @@
-package tn.esprit.hexacode.service;
+package com.example.hexacode.service;
 
 import java.util.List;
 
@@ -6,12 +6,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.PathVariable;
 
-import tn.esprit.hexacode.Entity.Collaborator;
-import tn.esprit.hexacode.Entity.Rating;
-import tn.esprit.hexacode.Entity.User;
-import tn.esprit.hexacode.repository.CollaboratorRepository;
-import tn.esprit.hexacode.repository.RatingRepository;
-import tn.esprit.hexacode.repository.UserRepository;
+import  com.example.hexacode.Entity.Collaborator;
+import  com.example.hexacode.Entity.Rating;
+import  com.example.hexacode.Entity.User;
+import  com.example.hexacode.repository.CollaboratorRepository;
+import  com.example.hexacode.repository.RatingRepository;
+import  com.example.hexacode.repository.UserRepository;
 @Service
 public class RatingServiceImp  implements IRatingService{
 

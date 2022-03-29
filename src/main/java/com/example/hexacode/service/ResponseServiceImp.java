@@ -1,4 +1,4 @@
-package tn.esprit.hexacode.service;
+package com.example.hexacode.service;
 
 import java.time.LocalDateTime;
 import java.util.List;
@@ -14,11 +14,11 @@ import org.springframework.data.jpa.domain.Specification;
 import org.springframework.http.HttpHeaders;
 import org.springframework.stereotype.Service;
 
-import tn.esprit.hexacode.Entity.Response;
-import tn.esprit.hexacode.Entity.utils.PagingHeaders;
-import tn.esprit.hexacode.Entity.utils.PagingResponse;
-import tn.esprit.hexacode.repo.ResponseRepository;
-import tn.esprit.hexacode.repo.SubjectRepository;
+import  com.example.hexacode.Entity.Response;
+import  com.example.hexacode.Entity.utils.PagingHeaders;
+import  com.example.hexacode.Entity.utils.PagingResponse;
+import  com.example.hexacode.repository.ResponseRepository;
+import  com.example.hexacode.repository.SubjectRepository;
 
 @Service
 public class ResponseServiceImp implements IResponseService{

@@ -1,9 +1,9 @@
-package tn.esprit.hexacode.Controller;
+package com.example.hexacode.Controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import tn.esprit.hexacode.Entity.History;
-import tn.esprit.hexacode.Service.HistoryService;
+import  com.example.hexacode.Entity.History;
+import  com.example.hexacode.service.HistoryService;
 
 
 @RestController

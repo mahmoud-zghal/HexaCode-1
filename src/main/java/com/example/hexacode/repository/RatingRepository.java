@@ -1,4 +1,4 @@
-package tn.esprit.hexacode.repository;
+package com.example.hexacode.repository;
 
 import java.util.List;
 
@@ -8,7 +8,7 @@ import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
 
-import tn.esprit.hexacode.Entity.Rating;
+import  com.example.hexacode.Entity.Rating;
 @Repository
 public interface RatingRepository extends JpaRepository<Rating , Long>{
 	

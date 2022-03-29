@@ -1,10 +1,10 @@
-package tn.esprit.hexacode.Service;
+package com.example.hexacode.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import tn.esprit.hexacode.Entity.Question;
-import tn.esprit.hexacode.Repository.QuestionRepository;
-import tn.esprit.hexacode.Repository.quizzQuestionRepository;
+import  com.example.hexacode.Entity.Question;
+import  com.example.hexacode.repository.QuestionRepository;
+import  com.example.hexacode.repository.quizzQuestionRepository;
 
 @Service
 public class QuestionServiceImpl implements QuestionService{

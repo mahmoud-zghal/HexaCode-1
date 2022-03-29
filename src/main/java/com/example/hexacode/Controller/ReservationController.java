@@ -1,4 +1,4 @@
-package tn.esprit.hexacode.controller;
+package com.example.hexacode.Controller;
 
 import java.util.List;
 
@@ -12,10 +12,10 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import tn.esprit.hexacode.Entity.Event;
-import tn.esprit.hexacode.Entity.Reservation;
-import tn.esprit.hexacode.repository.EventRepository;
-import tn.esprit.hexacode.service.IReservationService;
+import  com.example.hexacode.Entity.Event;
+import  com.example.hexacode.Entity.Reservation;
+import  com.example.hexacode.repository.EventRepository;
+import  com.example.hexacode.service.IReservationService;
 
 @RequestMapping("/reservation")
 @org.springframework.web.bind.annotation.RestController
@@ -33,8 +33,8 @@ public class ReservationController {
 	public Reservation addReservation(@RequestBody Reservation r,@PathVariable("event-id") long id ){
 		Event event = eventRepository.findById(id).get();    
 	
-		int nb = event.getNbPartipants() -1;
-	    event.setNbPartipants(nb);
+		int nb = event.getParticpants_number() -1;
+	    event.setParticpants_number(nb);
 		return iReservationService.addReservation(r);
 	}
 	

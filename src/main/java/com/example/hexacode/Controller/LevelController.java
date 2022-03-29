@@ -1,9 +1,9 @@
-package tn.esprit.hexacode.Controller;
+package com.example.hexacode.Controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import tn.esprit.hexacode.Entity.Level;
-import tn.esprit.hexacode.Service.LevelService;
+import  com.example.hexacode.Entity.Level;
+import  com.example.hexacode.service.LevelService;
 
 @RestController
 public class LevelController {

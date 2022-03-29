@@ -1,10 +1,10 @@
-package tn.esprit.hexacode.Controller;
+package com.example.hexacode.Controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import tn.esprit.hexacode.Entity.Theme;
-import tn.esprit.hexacode.Repository.ThemeRepository;
-import tn.esprit.hexacode.Service.ThemeService;
+import  com.example.hexacode.Entity.Theme;
+import  com.example.hexacode.repository.ThemeRepository;
+import  com.example.hexacode.service.ThemeService;
 
 @RestController
 public class ThemeController {

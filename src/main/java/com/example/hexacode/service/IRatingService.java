@@ -1,10 +1,10 @@
-package tn.esprit.hexacode.service;
+package com.example.hexacode.service;
 
 import java.util.List;
 
 import org.springframework.web.bind.annotation.PathVariable;
 
-import tn.esprit.hexacode.Entity.Rating;
+import  com.example.hexacode.Entity.Rating;
 
 public interface IRatingService {
 	public Rating findRatingByUserAndCollaborator( Long userId,Long collabId);

@@ -1,9 +1,9 @@
-package tn.esprit.hexacode.Entity.utils;
+package com.example.hexacode.Entity.utils;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
-import tn.esprit.hexacode.Entity.Response;
+import  com.example.hexacode.Entity.Response;
 
 import java.util.List;
 
